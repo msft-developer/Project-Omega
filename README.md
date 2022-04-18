@@ -1,13 +1,11 @@
 # Project Omega
 
-<p align="center">
-<img src="https://img.shields.io/badge/coverage-80%25-yellowgreen" />
-<img src="https://img.shields.io/badge/version-1.2.3-blue" />
-<img src="https://img.shields.io/badge/gem-2.2.0-blue" />
-<img src="https://img.shields.io/badge/dependencies-out%20of%20date-orange" />
-<img src="https://img.shields.io/badge/semver-2.0.0-blue" />
-<img src="https://img.shields.io/badge/uptime-100%25-brightgreen" />
-</p>
+![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
+![version](https://img.shields.io/badge/version-1.2.3-blue)
+![gem](https://img.shields.io/badge/gem-2.2.0-blue)
+![dependencies](https://img.shields.io/badge/dependencies-out%20of%20date-orange)
+![semver](https://img.shields.io/badge/semver-2.0.0-blue)
+![uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci ac auctor augue mauris. Ut tellus elementum sagittis vitae. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Lectus quam id leo in vitae turpis. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Quisque sagittis purus sit amet volutpat consequat mauris. In nibh mauris cursus mattis molestie. Condimentum id venenatis a condimentum. Urna et pharetra pharetra massa massa ultricies mi quis. Semper risus in hendrerit gravida rutrum quisque non tellus. Tempor nec feugiat nisl pretium fusce id. Facilisi morbi tempus iaculis urna id volutpat. Tortor vitae purus faucibus ornare suspendisse. Malesuada fames ac turpis egestas. Fames ac turpis egestas maecenas pharetra convallis. Pellentesque elit ullamcorper dignissim cras. Sapien pellentesque habitant morbi tristique senectus et netus et. Ac tortor vitae purus faucibus ornare. Venenatis lectus magna fringilla urna porttitor rhoncus.
 
