@@ -1,0 +1,48 @@
+name: Create Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Create new Release
+    if: "!contains(join(github.event.commits.*.message), '+norelease')"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup .NET 6
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Setup GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.11
+        with:
+          versionSpec: '5.x'
+
+      - name: Execute GitVersion
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.11
+        with:
+          useConfigFile: true
+
+      - name: Create Release
+        uses: actions/github-script@v4
+        with:
+          script: |
+
+            const releaseResult = await github.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: 'v${{ steps.gitversion.outputs.majorMinorPatch }}',
+              name: 'v${{ steps.gitversion.outputs.majorMinorPatch }}',
+              prerelease: false,
+              body: ''
+            });
